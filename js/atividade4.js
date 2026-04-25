@@ -16,7 +16,7 @@ botao.addEventListener("click", function () {
     const btnRemover = document.createElement("button");
     btnRemover.textContent = "Remover";
     btnRemover.addEventListener("click", function (event) {
-        event.stopPropagation(); // evita marcar como concluído ao clicar no botão
+        event.stopPropagation();
         li.remove();
     });
     li.appendChild(btnRemover);
